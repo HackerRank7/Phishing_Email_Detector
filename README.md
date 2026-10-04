@@ -2,7 +2,7 @@
 
 A machine-learning tool built with **Scikit-learn** that classifies emails as **Phishing** or **Safe** using both the email's text and URL-based features. It reaches **~96.7% accuracy** on a real dataset of 18,000+ emails and comes with a friendly command-line interface that explains *why* an email looks suspicious.
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
 ![Accuracy](https://img.shields.io/badge/Accuracy-96.7%25-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
@@ -66,8 +66,8 @@ Email text
 
 ```
 Phishing_Email_Detector.py/
-├── phishing_detector.py     # main script (training + scanning + CLI)
-├── requirements.txt         # Python dependencies
+├── Phishing_Email_Detector.py     # main script (training + scanning + CLI)
+├── requirements.txt         # python3 dependencies
 ├── confusion_matrix.png     # generated after training
 ├── phishing_model.joblib    # generated after training (ignored by git)
 ├── README.md
@@ -80,11 +80,11 @@ Phishing_Email_Detector.py/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/Phishing_Email_Detector.py.git
+git clone https://github.com/HackerRank7/Phishing_Email_Detector.py.git
 cd Phishing_Email_Detector.py
 
 # 2. (Recommended) create a virtual environment
-python -m venv venv
+python3 -m venv venv
 # Windows:      venv\Scripts\activate
 # Linux / Mac:  source venv/bin/activate
 
@@ -119,7 +119,7 @@ No dataset? Run the script without `--data` (menu option 2, press Enter) to trai
 ### Interactive menu (easiest)
 
 ```bash
-python phishing_detector.py
+python3 Phishing_Email_Detector.py
 ```
 
 ```
@@ -135,16 +135,16 @@ python phishing_detector.py
 
 ```bash
 # Train on your dataset (saves phishing_model.joblib and confusion_matrix.png)
-python phishing_detector.py --data Phishing_Email.csv
+python3 Phishing_Email_Detector.py --data Phishing_Email.csv
 
 # Open the scanner with the saved model (paste an email, type END to finish)
-python phishing_detector.py --interactive
+python3 Phishing_Email_Detector.py --interactive
 
 # Scan one email directly
-python phishing_detector.py --predict "URGENT: verify your password at http://secure-login.xyz"
+python3 Phishing_Email_Detector.py --predict "URGENT: verify your password at http://secure-login.xyz"
 
 # Scan an email stored in a text file
-python phishing_detector.py --file email.txt
+python3 Phishing_Email_Detector.py --file email.txt
 ```
 
 ### Example output
