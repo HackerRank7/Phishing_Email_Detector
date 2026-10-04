@@ -65,7 +65,7 @@ Email text
 ## 📁 Project structure
 
 ```
-phishing-email-detector/
+Phishing_Email_Detector.py/
 ├── phishing_detector.py     # main script (training + scanning + CLI)
 ├── requirements.txt         # Python dependencies
 ├── confusion_matrix.png     # generated after training
@@ -80,8 +80,8 @@ phishing-email-detector/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/phishing-email-detector.git
-cd phishing-email-detector
+git clone https://github.com/<your-username>/Phishing_Email_Detector.py.git
+cd Phishing_Email_Detector.py
 
 # 2. (Recommended) create a virtual environment
 python -m venv venv
