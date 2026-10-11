@@ -223,9 +223,6 @@ Trained on **18,634 emails** (7,312 phishing / 11,322 safe), 80/20 train–test 
 
 Issues and pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
-## 📄 License
-
-Copyright (c) 2026 <Your Name>. Distributed under the MIT License. Add a `LICENSE` file to your repository (GitHub can generate one for you).
 
 ## 🙏 Acknowledgements
 
