@@ -194,7 +194,6 @@ Trained on **18,634 emails** (7,312 phishing / 11,322 safe), 80/20 train–test 
 - The model catches **~98% of phishing emails** (recall 0.98), which matters most for security.
 - It wrongly flags ~4% of safe emails; an acceptable trade-off for a phishing filter.
 
-![Confusion Matrix](confusion_matrix.png)
 
 ---
 
